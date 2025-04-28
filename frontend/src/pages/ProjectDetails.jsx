@@ -190,7 +190,7 @@ function ProjectDetails() {
               </div>
             ) : tasks.length > 0 ? (
               <div className="grid gap-6 md:grid-cols-3">
-                {/* Todo Column */}
+               
                 <TaskColumn 
                   title="To Do"
                   icon={<Clock size={18} className="text-gray-500" />}
@@ -201,7 +201,7 @@ function ProjectDetails() {
                   badgeColor="bg-gray-100 text-gray-800"
                 />
                 
-                {/* In Progress Column */}
+               
                 <TaskColumn 
                   title="In Progress"
                   icon={<ChevronDown size={18} className="text-blue-500" />}
@@ -212,7 +212,6 @@ function ProjectDetails() {
                   badgeColor="bg-blue-100 text-blue-800"
                 />
                 
-                {/* Completed Column */}
                 <TaskColumn 
                   title="Completed"
                   icon={<CheckCircle2 size={18} className="text-green-500" />}
@@ -245,7 +244,7 @@ function ProjectDetails() {
         )}
       </main>
       
-      {/* Task Modal */}
+     
       {showTaskModal && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
           <div className="bg-white rounded-lg shadow-xl max-w-md w-full p-6 m-4">
@@ -413,8 +412,7 @@ function TaskCard({ task, onEdit, onDelete, onStatusChange }) {
     onStatusChange(task._id, newStatus);
     setShowDropdown(false);
   };
-
-  // Close dropdown when clicking outside
+ 
   useEffect(() => {
     if (showDropdown) {
       const handleOutsideClick = (e) => {

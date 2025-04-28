@@ -58,7 +58,7 @@ function Dashboard() {
       });
   };
 
-  // Filter projects based on search query
+ 
   const filteredProjects = projects.filter(project => 
     project.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
     (project.description && project.description.toLowerCase().includes(searchQuery.toLowerCase()))
@@ -66,7 +66,7 @@ function Dashboard() {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      {/* Header */}
+       
       <header className="bg-white shadow-sm sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-blue-600">Task Tracker</h1>
@@ -85,8 +85,7 @@ function Dashboard() {
           </div>
         </div>
       </header>
-
-      {/* Main content */}
+ 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
           <div>
@@ -193,7 +192,7 @@ function Dashboard() {
         )}
       </main>
 
-      {/* Create Project Modal */}
+      
       {showCreateModal && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
           <div className="bg-white rounded-lg shadow-xl max-w-md w-full p-6 m-4">
