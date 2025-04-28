@@ -151,6 +151,4 @@ task-tracker/
 └── README.md               # Project documentation
 ```
 
-## License
-
-MIT
+ 
